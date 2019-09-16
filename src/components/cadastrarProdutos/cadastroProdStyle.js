@@ -13,6 +13,7 @@ const CadastProd = styled.div`
       display: flex;
       flex-direction: column;
       align-items: flex-start;
+      /* span + input */
     }
   }
 `;
