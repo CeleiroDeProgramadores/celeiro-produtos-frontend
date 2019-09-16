@@ -10,9 +10,9 @@ const headerStyle = styled.div`
   div {
     flex: 1;
     text-align: center;
-    font-family: Montserrat;
+    font-weight: bold;
     font-size: 25px;
-    color: #ddd;
+    color: white;
   }
 `;
 
