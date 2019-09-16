@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import moreOptions from "../../assets/moreOp.png";
 const CadastProd = styled.div`
   width: 80%;
   padding: 20px;
@@ -7,6 +7,18 @@ const CadastProd = styled.div`
   height: auto;
   margin: 0 auto;
   background-color: #744aea;
+  select {
+    appearance: none;
+    background: none;
+    width: 100%;
+    background-color: white;
+    height: 25px;
+    padding-left: 5px;
+    background-image: url(${moreOptions});
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+  }
   h1 {
     color: white;
     margin-top: 20px;

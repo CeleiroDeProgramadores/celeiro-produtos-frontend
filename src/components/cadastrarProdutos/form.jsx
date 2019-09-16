@@ -7,49 +7,66 @@ const form = ({ children }) => {
       <div>
         <div id="nome">
           <span>Nome</span>
-          <input type="text" name="nome"></input>
+          <input
+            type="name"
+            name="nome"
+            placeholder="Ex: Macarrão espaguete galo 500G "
+          ></input>
         </div>
         <div>
           <span>Código interno</span>
-          <input type="text" name="codInter"></input>
+          <input type="number" name="codInter" placeholder="0"></input>
         </div>
         <div>
           <span>Código do fabricador</span>
-          <input type="text" name="codFab"></input>
+          <input type="number" name="codFab" placeholder="0"></input>
         </div>
         <div>
           <span>Código de barras</span>
-          <input type="text" name="codBar"></input>
+          <input type="number" name="codBar" placeholder="00000000"></input>
         </div>
       </div>
       <h1>Espicificação</h1>
       <div>
         <div>
           <span>Unidade</span>
-          <input type="text" name="un"></input>
+          <select name="unidade">
+            <option selected name="un" value="un">
+              Unidade (Un)
+            </option>
+            <option name="kg" value="kg">
+              kilo grama (Kg)
+            </option>
+            <option name="g" value="g">
+              Grama (G)
+            </option>
+            <option name="cx" value="cx">
+              Caixa (Cx)
+            </option>
+          </select>
         </div>
         <div>
           <span>Quantidade</span>
-          <input type="text" name="qtd"></input>
+          <input type="number" name="qtd" placeholder="Qnt"></input>
         </div>
         <div>
           <span>Custo do produto</span>
-          <input type="text" name="custoProd"></input>
+          <input type="number" name="custoProd" placeholder="R$"></input>
         </div>
         <div>
           <span>Valor da venda</span>
-          <input type="text" name="valorVend"></input>
+          <input type="number" name="valorVend" placeholder="R$"></input>
         </div>
       </div>
       <h1>Tributação</h1>
       <div>
         <div>
           <span>NCM</span>
-          <input type="text" name="ncm"></input>
+          <input type="number" name="ncm" placeholder="00000000"></input>
         </div>
         <div>
           <span>CEST</span>
-          <input type="text" name="cest"></input>
+          <input type="number" name="cest" placeholder=" 000000"></input>
         </div>
         {React.createElement(children[0].type, children[0].props)}
         {React.createElement(children[1].type, children[1].props)}
