@@ -6,6 +6,7 @@ const headerStyle = styled.div`
   height: 70px;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 45px;
   div {
     flex: 1;
     text-align: center;
