@@ -12,6 +12,7 @@ const form = ({ children }) => {
             type="name"
             name="nome"
             placeholder="Ex: Macarrão espaguete galo 500G "
+            required="true"
           ></input>
         </div>
         <div>
@@ -24,7 +25,12 @@ const form = ({ children }) => {
         </div>
         <div>
           <span>Código de barras</span>
-          <input type="number" name="codBar" placeholder="00000000"></input>
+          <input
+            type="number"
+            name="codBar"
+            placeholder="00000000"
+            required="true"
+          ></input>
         </div>
       </div>
       <h1>Espicificação</h1>
@@ -48,7 +54,12 @@ const form = ({ children }) => {
         </div>
         <div>
           <span>Quantidade</span>
-          <input type="number" name="qtd" placeholder="Qnt"></input>
+          <input
+            type="number"
+            name="qtd"
+            placeholder="Qnt"
+            required="true"
+          ></input>
         </div>
         <div>
           <span>Custo do produto</span>
@@ -56,7 +67,12 @@ const form = ({ children }) => {
         </div>
         <div>
           <span>Valor da venda</span>
-          <Valor type="text" name="valorVend" placeholder="R$" />
+          <Valor
+            type="text"
+            name="valorVend"
+            placeholder="R$"
+            required="true"
+          />
         </div>
       </div>
       <h1>Tributação</h1>

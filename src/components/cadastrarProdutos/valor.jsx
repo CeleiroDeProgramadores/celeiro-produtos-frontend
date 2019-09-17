@@ -61,6 +61,7 @@ class Valor extends Component {
         onChange={e => this.isNaN(e)}
         // step="0.00000001"
         maxLength="10"
+        required={this.props.required || false}
       ></input>
     );
   }
