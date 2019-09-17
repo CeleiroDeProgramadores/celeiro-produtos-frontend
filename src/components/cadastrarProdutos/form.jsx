@@ -1,4 +1,5 @@
 import React from "react";
+import Valor from "./valor";
 
 const form = ({ children }) => {
   return (
@@ -30,8 +31,8 @@ const form = ({ children }) => {
       <div>
         <div>
           <span>Unidade</span>
-          <select name="unidade">
-            <option selected name="un" value="un">
+          <select name="unidade" defaultValue="un">
+            <option name="un" value="un">
               Unidade (Un)
             </option>
             <option name="kg" value="kg">
@@ -51,11 +52,11 @@ const form = ({ children }) => {
         </div>
         <div>
           <span>Custo do produto</span>
-          <input type="number" name="custoProd" placeholder="R$"></input>
+          <Valor type="text" name="custoProd" placeholder="R$" />
         </div>
         <div>
           <span>Valor da venda</span>
-          <input type="number" name="valorVend" placeholder="R$"></input>
+          <Valor type="text" name="valorVend" placeholder="R$" />
         </div>
       </div>
       <h1>Tributação</h1>
